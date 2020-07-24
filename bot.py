@@ -1,9 +1,9 @@
 import telebot
+import config
 
 
 
-
-bot = telebot.TeleBot('1073569376:AAFXWbFgho9Q3r4zODyDqWvSvuLg2bIUPCI')
+bot = telebot.TeleBot(config.token)
 id = '-1001463284489'
 @bot.message_handler(content_types=['text'])
 def repeat_all_messages(message):
